@@ -1,0 +1,51 @@
+Script started on 2024-01-19 03:19:03-08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+]0;brian@OB-ACA: ~/520-Assignments/hw_1[01;32mbrian@OB-ACA[00m:[01;34m~/520-Assignments/hw_1[00m$ echo "Hello and welcome to the new quarter!"
+Hello and welcome to the new quarter!
+]0;brian@OB-ACA: ~/520-Assignments/hw_1[01;32mbrian@OB-ACA[00m:[01;34m~/520-Assignments/hw_1[00m$ date
+Fri Jan 19 03:22:00 PST 2024
+]0;brian@OB-ACA: ~/520-Assignments/hw_1[01;32mbrian@OB-ACA[00m:[01;34m~/520-Assignments/hw_1[00m$ echo $HOME
+/home/brian
+]0;brian@OB-ACA: ~/520-Assignments/hw_1[01;32mbrian@OB-ACA[00m:[01;34m~/520-Assignments/hw_1[00m$ cd /home/brai[K[Kian
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ ls
+[0m[01;34m520-Assignments[0m
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ mkdir temp
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ mv temp temp_new
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cd temp_new
+]0;brian@OB-ACA: ~/temp_new[01;32mbrian@OB-ACA[00m:[01;34m~/temp_new[00m$ touch file5
+]0;brian@OB-ACA: ~/temp_new[01;32mbrian@OB-ACA[00m:[01;34m~/temp_new[00m$ mv file5 test
+]0;brian@OB-ACA: ~/temp_new[01;32mbrian@OB-ACA[00m:[01;34m~/temp_new[00m$ cd ..
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ rm -r temp_new
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ echo "It's a secret!" > secretfile
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ chmod a-w secretfile
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ ls -l secretfile
+-r--r--r-- 1 brian brian 15 Jan 19 03:24 secretfile
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ car[Kt "more text" > secretfile
+bash: secretfile: Permission denied
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat "more text" > secretfile> secretfile
+bash: secretfile: Permission denied
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat "more text" >> secretfile[1@s[1@u[1@d[1@o[1@ 
+bash: secretfile: Permission denied
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ sudo cat "more text" >> secretfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksecretfile
+It's a secret!
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ echo "Additional text" > temp_file
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat temp_file secretfile > secretfile
+bash: secretfile: Permission denied
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat temp_file secretfile > secretfile[1@s[1@u[1@d[1@o[1@ 
+bash: secretfile: Permission denied
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ rm tmp_[K[K[K[Kr[Ktempf[K_file
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat "more text" | sudo tee secretfile[C-secretfileasecretfile secretfile
+cat: 'more text': No such file or directory
+[sudo] password for brian: 
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat "more text" | sudo tee -a secretfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat "more text" | sudo tee -a secretfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm temp_file[Ksudo cat temp_file secretfile > secretfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pecho "Additional text" > temp_file[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@m[1@o[1@r[1@e
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ echo "more text" > temp_file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat "more text" | sudo tee -a secretfile[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@t[1@e[1@m[1@p[1@_[1@f[1@i[1@l[1@e
+more text
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ cat secretfile
+It's a secret!
+more text
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ r[Kcat secretfiletemp_file | sudo tee -a secretfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pecho "more text" > temp_file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat "more text" | sudo tee -a secretfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm temp_file[K
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ ls
+[0m[01;34m520-Assignments[0m  secretfile
+]0;brian@OB-ACA: ~[01;32mbrian@OB-ACA[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2024-01-19 03:31:40-08:00 [COMMAND_EXIT_CODE="0"]
