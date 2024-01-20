@@ -18,18 +18,16 @@ Complex add ( Complex a, Complex b );
  *  \param a The first term
  *  \param b The second term
  */
-Complex mutiply ( Complex a, Complex b );
+Complex multiply ( Complex a, Complex b );
 
-/*! Magnitude two complexes
+/*! Return the Magnitude of the complex
  *  \param a The first summand
- *  \param b The second summand
  */
-double magnitude ( Complex a, Complex b );
+double magnitude ( Complex a);
 
-/*! Negate two complexes together
- *  \param a The first term
- *  \param b The second term
+/*! Negate the complex
+ *  \param a The complex
  */
-Complex negate ( Complex a, Complex b );
+Complex negate ( Complex a);
 
 #endif
