@@ -6,8 +6,9 @@ namespace {
     TEST(Complexes, BasicsAdd) {
         Complex a = (Complex) { 2, 3 },
                  b = (Complex) { 4, 5 };
-        EXPECT_EQ(add(a,b).real, 6);
-        EXPECT_EQ(add(a,b).im, 8);
+        Complex res = add(a, b);
+        EXPECT_EQ(res.real, 6);
+        EXPECT_EQ(res.im, 8);
 
     }
 
@@ -21,9 +22,9 @@ namespace {
 
     TEST(Complexes, BasicsNegate) {
         Complex a = (Complex) { 4, 5 };
-
-        EXPECT_EQ(negate(a).real, -4);
-        EXPECT_EQ(negate(a).im, -5);
+        Complex res = negate(a);
+        EXPECT_EQ(res.real, -4);
+        EXPECT_EQ(res.im, -5);
     }
 
     TEST(Complexes, BasicsMagnitude) {
