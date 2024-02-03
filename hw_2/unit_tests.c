@@ -31,6 +31,17 @@ namespace {
         ASSERT_EQ(x[4],10);
     }
 
+    TEST(HW2,ReverseInPlace2) {
+        int x[] = {5,10,15,20,25,30};
+        reverse_in_place(x,6);
+        ASSERT_EQ(x[0],30);
+        ASSERT_EQ(x[1],25);
+        ASSERT_EQ(x[2],20);
+        ASSERT_EQ(x[3],15);
+        ASSERT_EQ(x[4],10);
+        ASSERT_EQ(x[5],5);
+    }
+
     TEST(HW2,NumInstances) {
         int a[] = { 1, 1, 2, 3, 1, 4, 5, 2, 20, 5 };
         ASSERT_EQ(num_occurences(a,10,1), 3);
