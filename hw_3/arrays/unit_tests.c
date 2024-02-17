@@ -7,11 +7,17 @@
 
 namespace {
 
+    /**
+     * @brief Test fixture for DynamicArray class.
+     */
     TEST(DynamicArray, CreateAndDestroy) {
         DynamicArray * a = DynamicArray_new();
         DynamicArray_destroy(a);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with death tests.
+     */
     TEST(DynamicArray, DeathTests) {
         DynamicArray * a = DynamicArray_new();
         ASSERT_DEATH(DynamicArray_pop(a), ".*Assertion.*");
@@ -20,6 +26,9 @@ namespace {
         ASSERT_DEATH(DynamicArray_size(a), ".*Assertion.*");
     }    
 
+    /**
+     * @brief Test fixture for DynamicArray class with small index.
+     */
     TEST(DynamicArray, SmallIndex) {
         DynamicArray * da = DynamicArray_new();
         ASSERT_EQ(DynamicArray_size(da),0);
@@ -31,6 +40,9 @@ namespace {
         DynamicArray_destroy(da);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with big index.
+     */
     TEST(DynamicArray, BigIndex) {
         DynamicArray * da = DynamicArray_new();
         DynamicArray_set(da, 8, X);
@@ -38,6 +50,9 @@ namespace {
         DynamicArray_destroy(da);              
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with really big index.
+     */
     TEST(DynamicArray, ReallyBig) {
         DynamicArray * da = DynamicArray_new();
         DynamicArray_set(da, 400, X);
@@ -47,6 +62,9 @@ namespace {
         DynamicArray_destroy(da);              
     }  
 
+    /**
+     * @brief Test fixture for DynamicArray class with push operation.
+     */
     TEST(DynamicArray, Push) {
         DynamicArray * da = DynamicArray_new();
         double x = 0;
@@ -64,6 +82,9 @@ namespace {
         DynamicArray_destroy(da);          
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with push_front operation.
+     */
     TEST(DynamicArray, PushFront) {
         DynamicArray * da = DynamicArray_new();
         double x = 0;
@@ -79,6 +100,9 @@ namespace {
         DynamicArray_destroy(da);          
     } 
 
+    /**
+     * @brief Test fixture for DynamicArray class with ToString operation.
+     */
     TEST(DynamnicArray,ToString) {
         DynamicArray * da = DynamicArray_new();
         double x = 1.0;
@@ -96,6 +120,9 @@ namespace {
         free(str);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with pop operation.
+     */
     TEST(DynamicArray, Pop) {
         DynamicArray * da = DynamicArray_new();
         double x;
@@ -108,6 +135,9 @@ namespace {
         DynamicArray_destroy(da);          
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with map operation.
+     */
     TEST(DynamicArray, Map) {
         DynamicArray * t = DynamicArray_new(),
                      * y;
@@ -126,6 +156,9 @@ namespace {
         DynamicArray_destroy(y);                    
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with various mathematical operations.
+     */
     TEST(DynamicArray, Math) {
         DynamicArray *r = DynamicArray_range(0, 1, 0.1);
         char * str = DynamicArray_to_string(r);
@@ -148,6 +181,9 @@ namespace {
         DynamicArray_destroy(a);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with merge operation.
+     */
     TEST(DynamicArray, Merge) {
         DynamicArray * a = DynamicArray_range(0.1, 1, 0.1);
         DynamicArray * b = DynamicArray_range(1.1, 2, 0.1);
@@ -156,7 +192,7 @@ namespace {
         char * str = DynamicArray_to_string(c);
         printf("ToString Example: %s\n", str);
         
-        ASSERT_STREQ(
+                ASSERT_STREQ(
             str,
             "[0.10000,0.20000,0.30000,0.40000,0.50000,0.60000,0.70000,0.80000,0.90000,1.00000,1.10000,1.20000,1.30000,1.40000,1.50000,1.60000,1.70000,1.80000,1.90000,2.00000]"
         );
@@ -166,6 +202,9 @@ namespace {
         DynamicArray_destroy(c);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with copy operation.
+     */
     TEST(DynamicArray, Copy) {
         DynamicArray * a = DynamicArray_range(0.1, 1, 0.1);
         DynamicArray * b = DynamicArray_copy(a);
@@ -188,6 +227,9 @@ namespace {
         DynamicArray_destroy(d);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with take operation.
+     */
     TEST(DynamicArray, Take) {
         DynamicArray * a = DynamicArray_range(1, 5, 1);
         DynamicArray * b = DynamicArray_take(a, 2);  /* yields [ 1, 2 ] */
@@ -218,6 +260,9 @@ namespace {
         DynamicArray_destroy(d);
     }
 
+    /**
+     * @brief Test fixture for DynamicArray class with extra operations.
+     */
     TEST(DynamicArray, Extra) {
         DynamicArray * a = DynamicArray_range(0, 1, 0.1);
         DynamicArray * b = DynamicArray_range(1.1, 2, 0.1);
@@ -232,4 +277,5 @@ namespace {
         free(c);             
     }           
 
-}
+}  // End of namespace
+
