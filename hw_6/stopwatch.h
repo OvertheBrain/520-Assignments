@@ -1,3 +1,6 @@
+#ifndef _STOPWATCH_H
+#define _STOPWATCH_H
+
 #include <chrono>
 
 using namespace std::chrono;
@@ -20,3 +23,5 @@ class Stopwatch {
         high_resolution_clock::duration elapsed_time;
         bool started = false;
 };
+
+#endif

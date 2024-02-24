@@ -1,4 +1,3 @@
-#include <iostream>
 #include <ratio>
 #include <chrono>
 #include "stopwatch.h"
@@ -23,7 +22,7 @@ void Stopwatch::stop(){
 
 void Stopwatch::reset(){
     started = false;
-    elapsed_time = high_resolution_clock::now() - high_resolution_clock::now();
+    elapsed_time = high_resolution_clock::duration::zero();
 }
 
 double Stopwatch::get_seconds(){
