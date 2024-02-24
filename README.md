@@ -72,3 +72,4 @@ Assignments
 | 3 | Advanced Data Type | [hw3](https://github.com/OvertheBrain/520-Assignments/tree/main/hw_3/arrays) | Week4 | 2024.1.31 |
 | 4 | C++ Programming: Class, Operator and Template | [hw4](https://github.com/OvertheBrain/520-Assignments/tree/main/hw_4) | Week4~5 | 2024.2.03 |
 | 5 | C++ Programming: STL / string | [hw5](https://github.com/OvertheBrain/520-Assignments/tree/main/hw_5) | Week5~6 | 2024.2.15 |
+| 6 | ELMA: Process / Channel | [hw6](https://github.com/OvertheBrain/520-Assignments/tree/main/hw_6) | Week7 | 2024.2.23 |
