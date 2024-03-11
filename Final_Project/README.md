@@ -97,6 +97,8 @@ The command `esm start` uses the enviro setup manager to start a web server from
 Now that the necessary preparations have been completed, you are ready to launch the project.
 Navigate to `http://localhost` you should see a game screen like this: 
 
+![image](https://github.com/OvertheBrain/520-Assignments/assets/9031837/6e814f37-1324-47cd-bb05-06a6c69f405f)
+
 
 ### Now enjoy the project!
 
