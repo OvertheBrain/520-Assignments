@@ -1,0 +1,75 @@
+{
+
+    "name": "Brian Han's Enviro Project, Use WASD and SPACE to conrol the Attacker",
+    "ip": "0.0.0.0",
+    "port": 8765,
+
+    "buttons": [
+        {
+            "name": "restart",
+            "label": "Respawn",
+            "style": { "background": "green", "border-color": "black", "color": "white" }
+          },
+          {
+            "name": "level",
+            "label": "Level Up",
+            "style": { "background": "orange", "border-color": "black" }
+          }
+    ],
+
+    "agents": [  
+        {
+            "definition": "defs/attacker.json",
+            "style": { "fill": "blue", "stroke": "#888", "strokeWidth": "5px", "strokeOpacity": "0.25"},
+            "position": { "x": 0, "y": 280, "theta": 0 }
+        },
+        {
+            "definition": "defs/enemy.json",
+            "style": { "fill": "red", "stroke": "white", "strokeWidth": "5px", "strokeOpacity": "0.25"},
+            "position": { "x": -450, "y": -250, "theta": 1.5 }
+        },
+        {
+            "definition": "defs/boss.json",
+            "style": { "fill": "purple", "stroke": "white", "strokeWidth": "5px", "strokeOpacity": "0.25"},
+            "position": { "x": 0, "y": -250, "theta": 1.55 }
+        },
+        {
+            "definition": "defs/booster.json",
+            "style": { "fill": "green", "stroke": "#888", "strokeWidth": "5px", "strokeOpacity": "0.25"},
+            "position": { "x": 200, "y": -150, "theta": 0 }
+        }
+    ],
+
+    "references": [
+        {
+            "definition": "defs/bullet.json",
+            "style": { "fill": "yellow", "stroke": "#888", "strokeWidth": "2px", "strokeOpacity": "0.25" },
+            "position": {"x": -750, "y": -200, "theta": 0 }
+        },
+        {
+            "definition": "defs/chaser.json",
+            "style": { "fill": "pink", "stroke": "#888", "strokeWidth": "4px", "strokeOpacity": "0.25"},
+            "position": { "x": 0, "y": 0, "theta": 0 }
+        }
+        
+    ],
+
+    "invisibles": [
+        {
+            "definition": "defs/game_manager.json"
+        }
+    ],
+
+    "statics": [
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -700, "y": 300 },
+                { "x": 700,  "y": 300 },
+                { "x": 700,  "y": 290 },
+                { "x": -700, "y": 290 }
+            ]
+        }
+    ]
+
+}
