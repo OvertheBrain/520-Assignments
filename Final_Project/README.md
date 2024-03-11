@@ -68,6 +68,7 @@ to pull the enviro image and get a `bash` prompt that allows you to run commands
 You will initially be placed to the `/source` directory onto which the `-v` option to docker will have mounted the default directory in your host environment. This directory and its children are the only host directories available within the container environment.
 
 - **Enviro**
+
 Then make the project and start the enviro server as follows:
 ```bash
 esm start
