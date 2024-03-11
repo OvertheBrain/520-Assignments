@@ -1,8 +1,8 @@
 # Final Project
-This directory organizes the final project for **EEP 520- Software Engineering for Embedded Applications** built by [**Enviro**](https://github.com/klavinslab/enviro/).
+This directory organizes the final project for **EEP 520- Software Engineering for Embedded Applications** built with [**Enviro**](https://github.com/klavinslab/enviro/).
 
 ## Project Introduction
-This project has developed a video game akin to the classic "Shoot 'Em Up" genre. Within a web client created using Enviro, players are able to control a blue attack unit, navigating and launching attacks to eliminate opposing enemy units.
+This project has developed a video game akin to the classic "Shoot 'Em Up" genre. Within a web client created using Enviro, players are able to control a blue attacker unit, navigating and launching attacks to eliminate opposing enemy units.
 
 ### Game Control and Monster Guide
 
@@ -28,7 +28,7 @@ This project has developed a video game akin to the classic "Shoot 'Em Up" genre
   - **Special**: Improve player's move speed once attacker touch it
 
 > #### Gameplay Mechanics
-> - Attacks from the player inflict 2 points of damage.
+> - Bullet attacks from the player inflict 2 points of damage.
 > - Contact with any type of enemy unit results in an immediate game over.
 > - To restart the game, click the restart button located in the top-right corner.
 
@@ -101,6 +101,24 @@ Navigate to `http://localhost` you should see a game screen like this:
 
 
 ### Now enjoy the project!
+
+## References
+
+- ### Virus Exmple
+
+https://github.com/klavinslab/enviro/tree/master/examples/virus
+
+- ### Wanderers
+
+https://github.com/sosper30/eep520-wi24/tree/main/week9/wanderers2
+
+- ### Teleporter
+
+https://github.com/sosper30/eep520-wi24/blob/main/week9/Lecture9-1_README.md#using-click-events
+
+- ### Omni
+
+https://github.com/klavinslab/enviro/tree/master/examples/omni
 
 
 
