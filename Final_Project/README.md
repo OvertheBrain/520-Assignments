@@ -32,6 +32,13 @@ This project has developed a video game akin to the classic "Shoot 'Em Up" genre
 > - Contact with any type of enemy unit results in an immediate game over.
 > - To restart the game, click the restart button located in the top-right corner.
 
+### Increasing Game Difficulty
+
+To enhance the challenge as you play, you can increase the game's difficulty level by clicking the green button located in the top-right corner of the game interface. With each increment in difficulty level:
+
+- The frequency of randomly spawned enemy units will increase, making the game more challenging as more enemies appear on the screen.
+- The speed of enemy units will also increase, requiring quicker reactions and strategies to navigate through or eliminate the heightened threats.
+
 ### Project Implementation
 
 This project comprises seven agents in total: `attacker`, `enemy`, `boss`, `chaser`, `bullet`, `booster`, and `gameManager`.
@@ -78,7 +85,7 @@ enviro
 Through these commands, you have compiled the code already and started both enviro client and server.
 
 - **Go to Client/Game**
-- 
+
 The `-p80:80` option maps port 80 from the Docker container to ports on your host computer. This should allow you to go to
 
 > http://localhost with your web browser and see the ENVIRO client.
@@ -89,6 +96,9 @@ The command `esm start` uses the enviro setup manager to start a web server from
 
 Now that the necessary preparations have been completed, you are ready to launch the project.
 Navigate to `http://localhost` you should see a game screen like this: 
+
+
+### Now enjoy the project!
 
 
 
